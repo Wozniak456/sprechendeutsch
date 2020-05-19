@@ -1,0 +1,144 @@
+
+pre{font-size: 1.4em}
+ol {
+    background-color:#58594F;
+    opacity: 0.9;
+}
+a:link {
+text-decoration:none;
+color:white;
+}
+a:visited {
+text-decoration:none;
+color:#F2F2F2;}
+a:hover {
+text-decoration:underline;
+color:#BFBFBD;
+font-size:1.1em;}
+a:active {
+text-decoration:none;
+color:whitesmoke;
+font-size:1.5em;}
+
+h1 {
+  text-shadow: 6px 6px #403821;
+    font-size: 2.5cm;
+    color: #8B8C80;
+    text-align: center;
+    font-variant-position:super;
+}
+p{font-style: oblique;
+    font-size: 20px;
+background-color: #ccc;
+}
+li{font-size: 17;}
+nav {background: #25261C; opacity: 0.7;}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  border-left: 1px solid black;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  padding: 20px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FEFDFD;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.active, 
+.submenu a:hover {color: white;}
+.topmenu .fa, 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: #25261C;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;  
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: white;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+  body {
+    height: 100%;
+  margin: 0; padding: 0;
+    overflow: hidden;
+  font-family: 'Bradley Hand', cursive;
+background-image: url(bck.jpg);
+background-repeat: no-repeat;
+background-position: 50% 50%;
+
+    
+    background-size: cover;
+    
+    
+position: relative;
+top: 2%;
+
+  background-attachment: fixed;
+    overflow:scroll;    
+}
+.warning {
+    border: 10px ridge #f00;
+    background-color: #ff0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.warning img {
+    width: 100%;
+}
+
+.warning p {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+}
+
+
+@keyframes mymove {
+  100%   {top: 0px; background: grey; width: 100px;}
+  0% {top: 200px; background: black; width: 300px;}
+}
